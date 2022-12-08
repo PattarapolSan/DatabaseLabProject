@@ -1,0 +1,703 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-main {
+    position: fixed;
+    min-height:120px;
+    top: 0;
+    z-index: 20;
+    width: 100%;
+    background-color: white;
+    border-bottom: 0.5px solid grey;
+}
+
+.nav-tab {
+    min-height: 30px;
+}
+#top {
+    display: flex;
+}
+
+#bottom {
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    background-color: #fff;
+    margin-top: 10px;
+}
+#bottom ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 40px;
+    color: red;
+}
+
+#bottom a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 300;
+    transition: 0.3s;
+}
+
+#bottom a:hover {
+    color: red;
+}
+
+.nav-div {
+    min-height: 30px;
+    width: 25%;
+}
+
+#middle-box {
+    width: 50%;
+    display: flex;
+    
+}
+
+#middle-box img {
+  height: 60px;
+  width: auto;
+  
+}
+
+#middle-box a{
+    margin:  1% auto;
+}
+
+#nav-left {
+    display: flex;
+    align-items: center;
+}
+#menu-holder-left{
+    font-size: 20px;
+   margin-left: 50px;
+   font-weight: 300;
+   cursor: pointer;
+   transition: 0.3s
+}
+
+
+#menu-holder-left p{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+
+
+#menu-holder-left:hover{
+    color: red;
+    
+
+}
+
+
+#nav-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+#menu-holder-right{
+    font-size: 20px;
+   font-weight: 300;
+   margin-right: 50px;
+}
+
+#menu-holder-right a {
+    color: black;
+    transition: 0.3s;
+}
+
+#menu-holder-right a:hover {
+    color:red;
+}
+
+#nav-user {
+    margin-left: 15px;
+}
+
+.content {
+    margin-top: 130px;
+    height: calc(100vh - 130px);
+}
+
+
+.pop-links ul li {
+    display: block;
+    padding: 10px 0;
+    margin: 0 20px;
+
+  }
+.pop-links ul li a{
+    color: black;
+    text-decoration: none;
+}
+
+.pop-links a:hover{
+    color: red;
+}
+
+.pop-links {
+    position: fixed;
+    top: 0;
+    left: -1000px;
+    margin-top: 130px;
+    background-color: white;
+    height: calc(100vh - 130px);
+    width: 250px;
+    border-right: 0.2px solid grey;
+    transition: 1s;
+}
+
+#log-text-hold {
+ 
+    height: 20vh;
+    display: flex;
+    align-items: center;
+}
+#log-text-hold p{
+
+    color: red;
+    margin: 40px auto 0;
+    font-weight: 300;
+    font-size: 40px;
+}
+
+.log-content {
+    display: flex;
+    height: calc(80vh - 130px);
+}
+
+.log-sub{
+
+    width: 50%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.log-sub-inner {
+    height: 300px;
+    padding: 0 20px;
+    font-weight: 300;
+    width: 70%;
+}
+
+.log-sub-inner p {
+    font-size: 25px;
+    margin: 10px auto;
+}
+
+.log-input-group *{
+    display: block;
+
+}
+
+.log-input-group label {
+    padding: 10px 0;
+}
+
+.log-input-group input[type=text],.log-input-group input[type=password] {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 10px;
+
+}
+
+.log-input-group a{
+    color: black;
+
+}
+
+.log-input-group button {
+    box-sizing: border-box;
+    padding: 10px 0;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 20px;
+    background-color: white;
+    border: 0.2px solid grey;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.log-input-group button:hover {
+    background-color: red;
+    color: white;
+    border: 0;
+}
+
+.log-input-group button:active {
+    transform:translateY(4px);
+}
+
+.log-check *{
+    display: inline-block;
+}
+.log-check {
+    margin-top: 10px;
+}
+
+.log-check input{
+    margin-right: 10px;
+}
+
+#log-error {
+    color: red;
+}
+
+#log-sin-btn {
+    box-sizing: border-box;
+    padding: 10px 0;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 20px;
+    background-color: white;
+    border: 0.2px solid grey;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top: 40px;
+}
+
+#log-sin-btn:hover {
+    background-color: red;
+    color: white;
+    border: 0;
+}
+
+#log-sin-btn:active {
+    transform:translateY(4px);
+}
+
+
+.reg-sub {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.reg-sub-inner {
+
+    width:70vh;
+}
+
+
+.con-contain {
+    display:flex;
+    justify-content: space-between;
+}
+
+.con-name {
+    width: 48%;
+    display: inline-block;
+}
+
+
+#user-content {
+    margin-top: 130px;
+    display: flex;
+}
+
+.side-menu {
+    width: 20%;
+}
+
+.side-content {
+    width: 80%;
+}
+
+.side-menu ul li{
+    display: block;
+    padding: 10px 0;
+    margin: 0 20px;
+    font-size: 20px;
+    font-weight: 200;
+
+}
+
+.side-menu ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+#user-big {
+    font-weight: 400;
+    color: black;
+}
+
+.side-menu ul li a:hover{
+    text-decoration: none;
+    color: red;
+}
+
+#user-content-inner {
+    margin-top: 15px;
+}
+
+#user-content-inner label p{
+    display:block;
+}
+
+#user-content-inner label{
+    font-size: 25px;
+}
+
+#user-content-inner p {
+    font-size: 20px;
+    font-weight: 300;
+    padding: 10px 5px;
+}
+
+.user-contain-inner {
+    display: flex;
+    align-items: center;
+}
+
+.user-contain-inner p i{
+    display: inline;
+}
+
+.user-contain-inner i {
+    padding-left: 10px;
+}
+
+.user-contain-inner i:hover{
+    color: red;
+}
+
+#user-change-pass {
+    position: absolute;
+    top: 0;
+    left: -3000px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.user-change-pass-con {
+    background-color: white;
+    border: 1px solid grey;
+    height: 500px;
+    width: 400px;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.user-change-pass-con i{
+    float: right;
+    padding-top: 5px;
+    padding-right: 5px;
+    font-size: 30px;
+    cursor: pointer;
+
+    
+}
+
+.user-change-pass-con i:hover{
+    color: red;
+    
+    
+}
+
+.user-input {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#user-label {
+    margin-left: 10px;
+}
+
+#user-button {
+    width: 80%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#change_pass label{
+    font-size: 15px;
+    font-weight: 200;
+}
+
+
+.change-input-group *{
+    display: block;
+
+}
+
+.change-input-group label {
+    padding: 10px 0;
+}
+
+.change-input-group input[type=text],.change-input-group input[type=password] {
+    width: 90%;
+    box-sizing: border-box;
+    padding: 10px 10px;
+
+}
+
+.change-input-group a{
+    color: black;
+
+}
+
+.change-input-group button {
+    box-sizing: border-box;
+    padding: 10px 0;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 20px;
+    background-color: white;
+    border: 0.2px solid grey;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.change-input-group button:hover {
+    background-color: red;
+    color: white;
+    border: 0;
+}
+
+.change-input-group button:active {
+    transform:translateY(4px);
+}
+
+#user-change-email {
+    position: absolute;
+    top: 0;
+    left: -3000px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+    transition: 0.5s;
+}
+
+#product-con {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}   
+
+#product-con a{
+    text-decoration: none;
+}
+.product-div {
+    width: 400px;
+    height: 450px;
+    color: black;
+    background-color: white;
+    border: 0.2px solid grey;
+    border-radius: 2px;
+    margin: 10px;
+    transition: 0.3s;
+   
+}
+.product-div img {
+    width: auto;
+    height: 250px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.product-brand {
+    font-size: 30px;
+    font-weight: 300;
+    padding: 10px;
+}
+.product-name {
+    font-size: 20px;
+    font-weight: 300;
+    padding: 10px;
+}
+
+.product-div:hover {
+    box-shadow: 5px 7px red;
+    cursor: pointer;
+    transform: translateY(-2px);
+
+}
+
+.product-content {
+    margin-top: 130px;
+    display: flex;
+}
+
+#product-img {
+    width: 55%;
+    
+}
+
+
+
+#product-info {
+    width: 45%;
+    line-height: 50px;
+    font-weight: 200;
+
+}
+
+#product-img img{
+    margin-top: 30px;
+    max-width: 350px;
+}
+
+#product-info p{
+    font-size: 30px;
+
+}
+
+#product-info h3{
+    font-size: 35px;
+    font-weight: 300;
+}
+
+#product-number {
+    display: inline-block;
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    border: 0.2px solid grey;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+
+#address-con {
+    display: flex;
+    flex-wrap: wrap;
+}   
+
+
+.address-div {
+    width: 350px;
+    height: 350px;
+    color: black;
+    background-color: white;
+    border: 0.2px solid grey;
+    border-radius: 2px;
+    margin: 10px;
+    transition: 0.3s;
+   
+}
+
+#address-con a{
+    text-decoration: none;
+}
+
+
+
+.address-name{
+    font-size: 30px;
+    font-weight: 300;
+    padding: 10px;
+}
+.address-in {
+    font-size: 20px;
+    font-weight: 300;
+    padding: 10px;
+}
+
+#add-add-icon{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#add-add-icon i{
+    font-size: 80px;
+    font-weight: 100;
+    
+}
+
+.address-div:hover {
+    box-shadow: 5px 7px red;
+    cursor: pointer;
+    transform: translateY(-2px);
+
+}
+
+#user-add-address {
+    position: absolute;
+    top: 0;
+    left: 3000px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+    transition: 0.5s;
+}
+
+
+
+.con-contain-add {
+    display:flex;
+    justify-content: space-around;
+    width:100%;
+    margin-left:auto;
+    margin-right: auto;
+}
+
+.con-group-add {
+    display: inline-block;
+}
+
+#user-edit-address {
+    position: absolute;
+    top: 0;
+    left: 3000px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+    transition: 0.5s;
+}
+
+#logout-btn {
+    box-sizing: border-box;
+    padding: 10px 0;
+    margin-top: 10px;
+    width: 200px;
+    font-size: 20px;
+    background-color: white;
+    border: 0.2px solid grey;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#logout-btn:hover {
+    background-color: red;
+    color: white;
+    border: 0;
+
+}
+
+.sub-product {
+    margin-left: 20px;
+}
+
+
+
